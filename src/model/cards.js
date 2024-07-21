@@ -3,13 +3,19 @@ const mongoose = require('../db/mongoose');
 const cardSchema = new mongoose.Schema(
     {
 
-    name: {
-        type :String , 
-        require: true
-    },
-    number: String,
+    
+    
+    number :String,
+    card_type: String,
+    rating:String,
+    review: String,
+    joining_fees : String,
+    anual_fees : String,
+    description:String,
     expiry: String,
-    cvv: String
+    cvv: String,
+    name : String
+    
 }
 
 );
