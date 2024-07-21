@@ -10,7 +10,7 @@ const cardSchema = new mongoose.Schema(
     rating:String,
     review: String,
     joining_fees : String,
-    anual_fees : String,
+    annual_fees : String,
     description:String,
     expiry: String,
     cvv: String,
