@@ -14,7 +14,8 @@ const cardSchema = new mongoose.Schema(
     description:String,
     expiry: String,
     cvv: String,
-    name : String
+    name : String,
+    card_link:String
     
 }
 
