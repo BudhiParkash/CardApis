@@ -1,10 +1,7 @@
 const mongoose = require('../db/mongoose');
 
 const cardSchema = new mongoose.Schema(
-    {
-
-    
-    
+    {    
     number :String,
     card_type: String,
     rating:String,
@@ -16,10 +13,8 @@ const cardSchema = new mongoose.Schema(
     cvv: String,
     name : String,
     card_link:String,
-    image:String
-    
+    image:String    
 }
-
 );
 
 const Card = mongoose.model('Card', cardSchema);

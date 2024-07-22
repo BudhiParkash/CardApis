@@ -3,10 +3,12 @@ const app = express()
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const cardRoutes = require('./src/routers/cardRoutes');
+const userRoutes = require('./src/routers/userRoutes')
 
 app.use(bodyParser.json());
 app.use(cors());
 app.use(cardRoutes);
+app.use(userRoutes);
 
 app.listen(3001, () => {
     console.log('Server is running on port 3001');
